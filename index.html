@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przetwarzanie tekstu</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Przetwarzanie tekstu</h1>
+    </header>
+
+    <main>
+        <p>Podaj tekst do analizy i przetwarzania</p>
+        <textarea id="inputText" placeholder="Wprowadź tekst..."></textarea>
+        <button id="submitText">Wyślij zapytanie</button>
+
+        <div class="results">
+            <p>Liczba znaków: <span id="charCount">0</span></p>
+            <p>Liczba słów: <span id="wordCount">0</span></p>
+            <p>Liczba zdań: <span id="sentenceCount">0</span></p>
+        </div>
+
+        <div class="transformations">
+            <h3>Ciag w małych literach:</h3>
+            <button id="lowercaseText">Przetwórz</button>
+
+            <h3>Ciag w dużych literach:</h3>
+            <button id="uppercaseText">Przetwórz</button>
+
+            <h3>Ciag z zamienionymi spacjami:</h3>
+            <button id="replaceSpaces">Przetwórz</button>
+
+            <h3>Ciag bez zbędnych znaków:</h3>
+            <button id="removeNonLetters">Przetwórz</button>
+        </div>
+
+        <br>
+
+        <div class="searchReplace">
+            <h3>Wprowadź słowo do wyszukania:</h3>
+            <button id="promptSearch">Podaj słowo</button>
+
+            <h3>Wprowadź słowo do zamiany:</h3>
+            <button id="promptReplace">Podaj słowo</button>
+
+            <button id="replaceText">Wyślij zapytanie</button>
+            <p>Zmieniony ciąg: <span id="modifiedText"></span></p>
+        </div>
+
+        <br>
+
+        <button id="checkPalindrome">Sprawdzanie palindromu</button>
+    </main>
+
+    <footer>
+        <p>Dziękuję</p>
+    </footer>
+</body>
+</html>
